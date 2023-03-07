@@ -16,10 +16,10 @@
 
 <body>
     <div class="tudo">
-        <section class="menu">
+        <section class="menu" id="inicio">
             <header>
                 <img src="assets\vetor.png">
-                <h3 class="menu-title">Ben Catalani</h3>
+                <h3 class="menu-title"> <a href="#inicio">Ben Catalani</h3>
             </header>
             <nav>
                 <ul class="menu-list">
@@ -203,11 +203,11 @@
                     <h3 class="contact-subtext">Preencha o formulário e entrarei em contato o mais rápido
                         possível. </h3>
                     <form class="form">
-                        <input class="contato-input" type="text" id="nome" placeholder="Nome">
-                        <input class="contato-input" type="text" id="email" placeholder="E-mail">
-                        <input class="contato-input" type="text" id="assunto" placeholder="Assunto">
+                        <input class="contato-input" type="text" id="nome" placeholder="Nome" pattern="[a-zA-Z\s]+$" maxlength="50" required>
+                        <input class="contato-input" type="text" id="email" placeholder="seuemail@seuemail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        <input class="contato-input" type="text" id="assunto" placeholder="Assunto" maxlength="50" required>
                         <textarea class="contato-textarea" rows="5" cols="40" id="mensagem" name="mensagem"
-                            placeholder="Sua mensagem"></textarea>
+                            placeholder="Sua mensagem"></textarea required>
                         <button class="contato__botao">Enviar mensagem</button>
                     </form>
                 </div>
